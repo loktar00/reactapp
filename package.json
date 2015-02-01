@@ -1,0 +1,37 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://loktar00@github.com/loktar00/reactapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loktar00/reactapp/issues"
+  },
+  "homepage": "https://github.com/loktar00/reactapp",
+  "dependencies": {
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.13.3",
+    "react-router": "^0.11.6",
+    "reflux": "^0.2.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.0.0-rc3",
+    "css-loader": "^0.9.1",
+    "gulp": "^3.8.10",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-util": "^3.0.2",
+    "gulp-webpack": "^1.2.0",
+    "jsx-loader": "^0.12.2",
+    "less": "^2.3.1",
+    "less-loader": "^2.0.0",
+    "webpack": "^1.5.3"
+  }
+}
