@@ -15,7 +15,6 @@ var ListingBox = React.createClass({
         };
     },
     onStatusChange: function(data) {
-        console.log('status changed')
         this.setState({
             listings: data
         });
@@ -27,7 +26,6 @@ var ListingBox = React.createClass({
         ListingActions.loadListings();
     },
     render: function() {
-        console.log(this.state.listings);
         var listingNodes = this.state.listings.map(function (listing) {
         return (
             <div key={listing.addressStreet + listing.addressNumber}>
