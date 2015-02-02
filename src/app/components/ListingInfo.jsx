@@ -15,11 +15,11 @@ var ListingInfo = React.createClass({
     render: function () {
         return (
             <ul>
-                <li>{this.props.address}</li>
-                <li>{this.props.price}</li>
-                <li>{this.props.bedrooms}</li>
-                <li>{this.props.bathrooms}</li>
-                <li>{this.props.squareFoot}</li>
+                <li>Address : {this.props.address}</li>
+                <li>Price : {this.props.price}</li>
+                <li>Beds : {this.props.bedrooms}</li>
+                <li>Baths : {this.props.bathrooms}</li>
+                <li>Squarefoot : {this.props.squareFoot}</li>
             </ul>
         );
     }
