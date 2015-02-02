@@ -31,7 +31,7 @@ gulp.task('bundle', function(cb){
             if(err) {
                 throw new $.util.PluginError('webpack', err);
             }
-            //$.util.log('[webpack]', stats.toString({colors: true}));
+            $.util.log('[webpack]', stats.toString({colors: true}));
         }))
         .pipe(gulp.dest('build/'))
         .pipe(browserSync.reload({stream:true}));;
