@@ -1,6 +1,10 @@
 var React = require('react');
 
 var SearchBox = React.createClass({
+    handleSubmit : function(e){
+        e.preventDefault();
+        this.props.onFormSubmit();
+    },
     handleChange : function(e){
         this.props.onUserInput(e.target.name, e.target.value);
     },
@@ -25,6 +29,7 @@ var SearchBox = React.createClass({
                     <option value='4'>4+</option>
                     <option value='5'>5+</option>
                 </select>
+                <input type='submit' name='submit' value="Search" />
             </form>
         );
     }

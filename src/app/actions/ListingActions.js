@@ -2,7 +2,10 @@ var Reflux = require('Reflux');
 
 var ListingActions = Reflux.createActions([
         'loadListings',
-        'getListing'
+        'getListings'
     ]);
+
+
+ListingActions.getListings.listen( function(data) {});
 
 module.exports = ListingActions;
