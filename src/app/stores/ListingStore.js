@@ -1,4 +1,4 @@
-var Reflux = require('Reflux'),
+var Reflux = require('reflux'),
     reqwest = require('reqwest'),
     ListingActions = require('../actions/ListingActions');
 
@@ -21,7 +21,7 @@ var ListingStore = Reflux.createStore({
     getListings : function(data){
         var self = this;
         data.full = true;
-        
+
         reqwest({
             url: 'http://omahahomehunt.com/inc/listingResult.php',
             method: 'post',

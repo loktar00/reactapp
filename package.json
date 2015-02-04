@@ -25,12 +25,17 @@
     "reqwest": "^1.1.5"
   },
   "devDependencies": {
+    "6to5-core": "^3.3.10",
+    "6to5-loader": "^3.0.0",
     "browser-sync": "^2.0.0-rc3",
     "css-loader": "^0.9.1",
+    "esprima-fb": "^10001.1.0-dev-harmony-fb",
     "gulp": "^3.8.10",
     "gulp-load-plugins": "^0.8.0",
     "gulp-util": "^3.0.2",
     "gulp-webpack": "^1.2.0",
+    "jscs": "^1.10.0",
+    "jscs-loader": "0.0.4",
     "jsx-loader": "^0.12.2",
     "less": "^2.3.1",
     "less-loader": "^2.0.0",
