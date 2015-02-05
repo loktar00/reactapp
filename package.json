@@ -31,6 +31,7 @@
     "css-loader": "^0.9.1",
     "esprima-fb": "^10001.1.0-dev-harmony-fb",
     "gulp": "^3.8.10",
+    "gulp-if": "^1.2.5",
     "gulp-load-plugins": "^0.8.0",
     "gulp-util": "^3.0.2",
     "gulp-webpack": "^1.2.0",
@@ -39,6 +40,7 @@
     "jsx-loader": "^0.12.2",
     "less": "^2.3.1",
     "less-loader": "^2.0.0",
+    "minimist": "^1.1.0",
     "webpack": "^1.5.3"
   }
 }
