@@ -1,18 +1,19 @@
 var webpack = require('webpack');
 
-module.exports = function(release){
+module.exports = function(release) {
     return {
         entry: './src/app/app.jsx',
-        output : {
+        output: {
             path: __dirname + '/build',
-            filename: 'app.js',
+            filename: 'app.js'
         },
+        devtool: release ? '' : 'source-map',
         plugins: release ? [
           new webpack.optimize.UglifyJsPlugin(),
           new webpack.optimize.OccurenceOrderPlugin(true),
           new webpack.optimize.AggressiveMergingPlugin()
         ] : [],
-        watch : !release,
+        watch: !release,
         module: {
             preLoaders: [
                 { test: /\.js$/, exclude: /node_modules/, loader: 'jscs-loader'},
@@ -25,7 +26,7 @@ module.exports = function(release){
                 { test: /\.js$/, exclude: /node_modules/, loader: '6to5-loader'}
             ]
         },
-        jscs : {
+        jscs: {
             // https://github.com/airbnb/javascript
             'preset': 'airbnb',
             // for es6 
